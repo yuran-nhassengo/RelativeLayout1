@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25c"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="Facebook"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtEmali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/txtFacebook"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmali"
+        android:layout_marginLeft="10dp"
+        android:background="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txtPassword"
+        android:text="Password"
+        android:layout_below="@id/editEmail"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:inputType="textPassword"
+        android:layout_below="@id/txtPassword" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        android:id="@+id/checkbox1"
+        android:layout_below="@id/editPassword"
+        android:text="Save Login"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="402dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="Need an Account?\n Sign up using your phone"
+        android:textColor="#fff" />
+
+</RelativeLayout>
